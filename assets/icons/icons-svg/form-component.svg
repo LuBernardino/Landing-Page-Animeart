@@ -1,0 +1,83 @@
+<svg width="629" height="431" viewBox="0 0 629 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="474" cy="5" r="5" fill="#FF777E"/>
+<circle cx="564" cy="5" r="5" fill="#FF777E"/>
+<circle cx="474" cy="35" r="5" fill="#FF777E"/>
+<circle cx="564" cy="35" r="5" fill="#FF777E"/>
+<circle cx="474" cy="65" r="5" fill="#FF777E"/>
+<circle cx="564" cy="65" r="5" fill="#FF777E"/>
+<circle cx="504" cy="5" r="5" fill="#FF777E"/>
+<circle cx="594" cy="5" r="5" fill="#FF777E"/>
+<circle cx="504" cy="35" r="5" fill="#FF777E"/>
+<circle cx="594" cy="35" r="5" fill="#FF777E"/>
+<circle cx="504" cy="65" r="5" fill="#FF777E"/>
+<circle cx="594" cy="65" r="5" fill="#FF777E"/>
+<circle cx="534" cy="5" r="5" fill="#FF777E"/>
+<circle cx="624" cy="5" r="5" fill="#FF777E"/>
+<circle cx="534" cy="35" r="5" fill="#FF777E"/>
+<circle cx="624" cy="35" r="5" fill="#FF777E"/>
+<circle cx="534" cy="65" r="5" fill="#FF777E"/>
+<circle cx="624" cy="65" r="5" fill="#FF777E"/>
+<circle cx="474" cy="92" r="5" fill="#FF777E"/>
+<circle cx="564" cy="92" r="5" fill="#FF777E"/>
+<circle cx="474" cy="122" r="5" fill="#FF777E"/>
+<circle cx="564" cy="122" r="5" fill="#FF777E"/>
+<circle cx="474" cy="152" r="5" fill="#FF777E"/>
+<circle cx="564" cy="152" r="5" fill="#FF777E"/>
+<circle cx="504" cy="92" r="5" fill="#FF777E"/>
+<circle cx="594" cy="92" r="5" fill="#FF777E"/>
+<circle cx="504" cy="122" r="5" fill="#FF777E"/>
+<circle cx="594" cy="122" r="5" fill="#FF777E"/>
+<circle cx="504" cy="152" r="5" fill="#FF777E"/>
+<circle cx="594" cy="152" r="5" fill="#FF777E"/>
+<circle cx="534" cy="92" r="5" fill="#FF777E"/>
+<circle cx="624" cy="92" r="5" fill="#FF777E"/>
+<circle cx="534" cy="122" r="5" fill="#FF777E"/>
+<circle cx="624" cy="122" r="5" fill="#FF777E"/>
+<circle cx="534" cy="152" r="5" fill="#FF777E"/>
+<circle cx="624" cy="152" r="5" fill="#FF777E"/>
+<circle cx="5" cy="279" r="5" fill="#FF777E"/>
+<circle cx="95" cy="279" r="5" fill="#FF777E"/>
+<circle cx="5" cy="309" r="5" fill="#FF777E"/>
+<circle cx="95" cy="309" r="5" fill="#FF777E"/>
+<circle cx="5" cy="339" r="5" fill="#FF777E"/>
+<circle cx="95" cy="339" r="5" fill="#FF777E"/>
+<circle cx="35" cy="279" r="5" fill="#FF777E"/>
+<circle cx="125" cy="279" r="5" fill="#FF777E"/>
+<circle cx="35" cy="309" r="5" fill="#FF777E"/>
+<circle cx="125" cy="309" r="5" fill="#FF777E"/>
+<circle cx="35" cy="339" r="5" fill="#FF777E"/>
+<circle cx="125" cy="339" r="5" fill="#FF777E"/>
+<circle cx="65" cy="279" r="5" fill="#FF777E"/>
+<circle cx="155" cy="279" r="5" fill="#FF777E"/>
+<circle cx="65" cy="309" r="5" fill="#FF777E"/>
+<circle cx="155" cy="309" r="5" fill="#FF777E"/>
+<circle cx="65" cy="339" r="5" fill="#FF777E"/>
+<circle cx="155" cy="339" r="5" fill="#FF777E"/>
+<circle cx="5" cy="366" r="5" fill="#FF777E"/>
+<circle cx="95" cy="366" r="5" fill="#FF777E"/>
+<circle cx="5" cy="396" r="5" fill="#FF777E"/>
+<circle cx="95" cy="396" r="5" fill="#FF777E"/>
+<circle cx="5" cy="426" r="5" fill="#FF777E"/>
+<circle cx="95" cy="426" r="5" fill="#FF777E"/>
+<circle cx="35" cy="366" r="5" fill="#FF777E"/>
+<circle cx="125" cy="366" r="5" fill="#FF777E"/>
+<circle cx="35" cy="396" r="5" fill="#FF777E"/>
+<circle cx="125" cy="396" r="5" fill="#FF777E"/>
+<circle cx="35" cy="426" r="5" fill="#FF777E"/>
+<circle cx="125" cy="426" r="5" fill="#FF777E"/>
+<circle cx="65" cy="366" r="5" fill="#FF777E"/>
+<circle cx="155" cy="366" r="5" fill="#FF777E"/>
+<circle cx="65" cy="396" r="5" fill="#FF777E"/>
+<circle cx="155" cy="396" r="5" fill="#FF777E"/>
+<circle cx="65" cy="426" r="5" fill="#FF777E"/>
+<circle cx="155" cy="426" r="5" fill="#FF777E"/>
+<path d="M611.218 116.076L483.039 17.166C479.538 14.465 475.242 13 470.82 13H37C25.9543 13 17 21.9543 17 33V318.687C17 325.627 20.597 332.07 26.5039 335.712L148.66 411.024C151.815 412.97 155.449 414 159.156 414H599C610.046 414 619 405.046 619 394V131.91C619 125.711 616.126 119.862 611.218 116.076Z" fill="#484848" stroke="url(#paint0_linear_32_1954)" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_32_1954" x1="318" y1="13" x2="318" y2="414" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5582"/>
+<stop offset="0.364583" stop-color="#FF777F"/>
+<stop offset="0.697917" stop-color="#FFA37A"/>
+<stop offset="1" stop-color="#FFC776"/>
+</linearGradient>
+</defs>
+</svg>
