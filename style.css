@@ -89,7 +89,7 @@ section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(/assets/images/background-blue.png);
+  background: url(./assets/images/background-blue.png);
   background-size: cover;
   background-position: center;
   display: grid;
