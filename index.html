@@ -1,159 +1,247 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animeart</title>
+<html lang="pt-pt">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style.css" />
-  </head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-  <body>
-    <header>
-        <nav>
-            <img src="/assets/icons/icons-svg/logotype.svg" alt="" />
-            <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#modulos">Módulos</a></li>
-            <li><a href="#mentor">Mentor</a></li>
-            <li><a href="#depoimentos">Depoimentos/FAQ</a></li>
-            </ul>
-            <button>Quero aprender!</button>
-        </nav>
-    </header>
+        <title>Anime Art</title>
 
-    <main>
-        <section id="inicio">
-            <h1>MÉTODO FAN ART 3.0</h1>
-            <div id="boxes">
-                <div id="inicio-text">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=RocknRoll+One&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <span id="logo"><img src="/assets/icons/icons-svg/logotype.svg" alt=""></span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#begin">Início</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#modules">Módulos</a></li>
+                    <li><a href="#mentor">Mentora</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="begin" class="begin">
+                <div class="begin-text animate__animated animate__fadeInLeft">
+                    <h1>ANIME <br>ART</h1>
                     <p>
-                    Descubra, finalmente, o método exato para aprender a desenhar seus
-                    personagens de animes favoritos, mesmo se você não nasceu com o
-                    dom de desenhar. Com o sistema completo do Método Fan Art 3.0,
-                    você será capaz de:
+                        Descubra, finalmente, o método exato para aprender a desenhar seus
+                        personagens de animes favoritos, mesmo se você não nasceu com o dom
+                        de desenhar. Com o sistema completo do Método Fan Art 3.0.
                     </p>
-                    <p>
-                    <img src="/assets/icons/icons-svg/gota-neon.svg" alt="icone de neon"/>
-                    Desenhar qualquer personagem de anime em poucos minutos, usando
-                    apenas uma folha e um lápis.
-                    </p>
-                    <p>
-                        <img src="/assets/icons/icons-svg/gota-neon.svg" alt="icone de neon"/>
-                        Compreender a estrutura usada pelos criadores de personagens para 
-                        desenhá-los de forma perfeita.
-                    </p>
-                    <p>
-                        <img src="/assets/icons/icons-svg/gota-neon.svg" alt="icone de neon"/>
-                        Adquirir habilidades de desenho em poucas semanas, diferentemente 
-                        das escolas tradicionais que costumam levar anos.
-                    </p>
+                    <a href="https://pay.hotmart.com/Q7370736D?checkoutMode=10&_hi=eyJjaWQiOiIxNjc4MTg2OTI0NjA4MTk2NTYyMTI2ODQzNDE0NTYwIiwiYmlkIjoiMTY3ODE4NjkyNDYwODE5NjU2MjEyNjg0MzQxNDU2MCIsInNpZCI6IjliMDRkMzQxZWI4YTRlZWJiODA1MzE2NzdlNzJmZTMxIn0=.1682550511953" target="_blank" class="begin-btn">QUERO APRENDER!</a>
+                </div>
+                <div class="begin-img">
+                    <div class="ball ball-1 animate__animated animate__zoomIn"></div>
+                    <div class="ball ball-2 animate__animated animate__zoomIn"></div>
+                    <div class="ball ball-3 animate__animated animate__zoomIn"></div>
+                    <img src="/assets/images/draw-jujutsu.png" class="animate__animated animate__zoomIn" alt="imagem de desenho de anime"/>
+                </div>
+                <!-- <div id="begin-img"> -->
+                
+                <!-- </div> -->
+            </section>
+
+            <section id="benefits">
+                <h2>BENEFÍCIOS</h2>
+                <div class="row-items ">
+                    <div class="container-box">
+                        <div class="container-img"><img src="/assets/icons/icons-svg/computer.svg" alt="Icone de computador" /></div>
+                        <h3>CURSO 100% ONLINE</h3>
+                        <p>Assista de qualquer <br />dispositivo.</p>
+                    </div>
+                    <div class="container-box">
+                        <div class="container-img"><img src="/assets/icons/icons-svg/video.svg" alt="Icone de video" /></div>
+                        <h3>+35 VIDEO AULAS</h3>
+                        <p>Aulas didáticas, com <br />exercícios práticos.</p>
+                    </div>
+                    <div class="container-box">
+                        <div class="container-img"><img src="/assets/icons/icons-svg/computer-check.svg" alt="Icone de computador com check" /></div>
+                        <h3>ACESSO VITALÍCIO</h3>
+                        <p>Acessar o curso <br />para sempre.</p>
+                    </div>
+                </div>
+                <div class="row-items">
+                    <div class="container-box">
+                        <div class="container-img"><img src="/assets/icons/icons-svg/clock.svg" alt="Icone de relógio" /></div>
+                        <h3>LIBERADO 24H/DIA</h3>
+                        <p>Assista quando quiser, <br />a qualquer hora.</p>
+                    </div>
+                    <div class="container-box">
+                        <div class="container-img"><img src="/assets/icons/icons-svg/certificate.svg" alt="Icone de certificado" /></div>
+                        <h3>CERTIFICADO 3.0</h3>
+                        <p>Certificado de conclusão <br />de curso.</p>
+                    </div>
+                    <div class="container-box">
+                        <div class="container-img"><img src="/assets/icons/icons-svg/comunity.svg" alt="Icone de comunidade" /></div>
+                        <h3>COMUNIDADE</h3>
+                        <p>Apoio de milhares <br />de alunos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="modules">
+                <h2>MÓDULOS</h2>
+                <div class="container-modules-row">
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod01.png" alt="Imagem do módulo 01" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-one.svg" alt="Icone do numero 01"/>
+                        </div>
+                        <h4>ANÁLISE DE IMAGENS</h4>
+                        <p>
+                        Fundamental para qualquer pessoa que tenha interesse em se
+                        aprofundar no mundo da arte, design gráfico, animação ou outras
+                        áreas que envolvem o uso de imagens.
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod02.png" alt="Imagem do módulo 02" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-two.svg" alt="Icone do numero 02"/>
+                        </div>
+                        <h4>TÉCNICAS DE ESBOÇO</h4>
+                        <p>
+                        Essencial para aprender técnicas de esboço utilizadas pelos
+                        verdadeiros desenhistas de mangá e receberá um guia passo a passo
+                        para desenvolver o esboço do desenho de forma mais assertiva e bem
+                        estruturada.
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod03.png" alt="Imagem do módulo 03" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-three.svg" alt="Icone do numero 03"/>
+                        </div>
+                        <h4>ANATOMIA DE ROSTO</h4>
+                        <p>
+                        Análise de imagens é voltado para o estudo da anatomia, aprenderá
+                        técnicas e estratégias para desenhar personagens em diferentes
+                        posições e ângulos, mantendo a proporção e simetria do desenho.
+                        </p>
+                    </div>
                 </div>
 
-                <div id="inicio-image">
-                    <img src="/assets/icons/icons-svg/form-component-image.svg" alt=""/>
+                <div class="container-modules-row">
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod04.png" alt="Imagem do módulo 04" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-four.svg" alt="Icone do numero 04"/>
+                        </div>
+                        <h4>ANATOMIA DE CORPO</h4>
+                        <p>
+                        Análise de imagens é dedicado ao estudo da anatomia do corpo
+                        humano e movimentos mais realistas e dinâmicos. Aprenderá a
+                        desenhar em diferentes tamanhos.
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod05.png" alt="Imagem do módulo 05" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-five.svg" alt="Icone do numero 05"/>
+                        </div>
+                        <h4>ANÁLISE DE CABELOS</h4>
+                        <p>
+                        Eles possuem um estilo único e muitas vezes parecem desafiar as
+                        leis da gravidade, o que pode dificultar o processo de desenho.
+                        Aprenderá a técnica de desenho de cabelos em anime/mangá.
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod06.png" alt="Imagem do módulo 06" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-six.svg"alt="Icone do numero 06"/>
+                        </div>
+                        <h4>MÃOS E PÉS PERFEITOS</h4>
+                        <p>
+                        Aprenderá técnicas e estratégias para desenhar mãos e pés em
+                        personagens de anime/mangá de forma precisa e realista, levando em
+                        conta a anatomia e os detalhes únicos de cada estilo.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="inicio-cards">
-                <div class="cards">
-                    <img src="/assets/icons/icons-svg/computer.svg" alt=""/>
-                    <h3>CURSO 100% </br>ONLINE</h3>
-                    <p>Assista de qualquer dispositivo.</p>
+                <div class="container-modules-row">
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod07.png" alt="Imagem do módulo 07" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-seven.svg" alt="Icone do numero 07"/>
+                        </div>
+                        <h4>DESENHANDO ROUPAS</h4>
+                        <p>
+                        Aprenderá técnicas de desenhar roupas, e analisar as semelhanças
+                        de roupas de manga curta/longa, calças, camisetas, e acessórios
+                        com exatidão.
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod08.png" alt="Imagem do módulo 08" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-eight.svg"alt="Icone do numero 08"/>
+                        </div>
+                        <h4>FINALIZAÇÃO</h4>
+                        <p>
+                        Aprenderá como segurar corretamente a caneta para obter o melhor
+                        resultado, qual tipo de caneta ideal para o seu desenho, e como
+                        utilizar diferentes espessuras de caneta para criar contrastes e
+                        detalhes.
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-card-img">
+                            <img src="/assets/images/mod09.png" alt="Imagem do módulo 09" />
+                            <img class="container-card-number" src="/assets/icons/icons-svg/number-nine.svg" alt="Icone do numero 09"/>
+                        </div>
+                        <h4>PINTURA LUZ E SOMBRA</h4>
+                        <p>
+                        Será introduzido ao mundo da pintura, aprimorando ainda mais o seu
+                        desenho. Aprenderá as técnicas de luz e sombra para dar mais
+                        profundidade e realismo às suas criações.
+                        </p>
+                    </div>
                 </div>
-                <div class="cards">
-                    <img src="/assets/icons/icons-svg/videos.svg" alt=""/>
-                    <h3>+35 VIDEO </br>AULAS</h3>
-                    <p>Aulas didáticas, com exercícios práticos.</p>
-                </div>
-                <div class="cards">
-                    <img src="/assets/icons/icons-svg/computer2.svg" alt=""/>
-                    <h3>ACESSO </br>VITALÍCIO</h3>
-                    <p>Acessar o curso para sempre.</p>
-                </div>
-                <div class="cards">
-                    <img src="/assets/icons/icons-svg/clock.svg" alt=""/>
-                    <h3>LIBERADO </br>24H/DIA</h3>
-                    <p>Assista quando quiser, a qualquer hora.</p>
-                </div>
-                <div>
-                    <img src="/assets/icons/icons-svg/logocurso2.svg" alt=""/>
-                </div>
-            </div>
-        </section>
-    <!-- -------------------------------MÓDULOS------------------------- -->
-        <section id="modulos">
-            <img class="balls-component" src="/assets/icons/icons-svg/balls-component.svg" alt=""/>
-            <div id="nav-modulos">
-                <div id="modulos-numbers">
-                    <ul>
-                        <li><a href="#">01</a></li>
-                        <li><a href="#">02</a></li>
-                        <li><a href="#">03</a></li>
-                        <li><a href="#">04</a></li>
-                        <li><a href="#">05</a></li>
-                        <li><a href="#">06</a></li>
-                        <li><a href="#">07</a></li>
-                        <li><a href="#">08</a></li>
-                        <li><a href="#">09</a></li>
-                        </ul>
-                </div>
-                <div id="module-one">
-                    <h3>MÓDULO 01</h3>
-                    <p class="texts">O módulo 1 do curso de análise de imagens é fundamental 
-                        para qualquer pessoa que tenha interesse em se aprofundar 
-                        no mundo da arte, design gráfico, animação ou outras áreas 
-                        que envolvem o uso de imagens. Neste módulo, você vai 
-                        aprender a analisar imagens de uma maneira mais aprofundada 
-                        e crítica, evitando os detalhes que muitas vezes passam despercebidos 
-                        e alinhando os traços que fazem a diferença entre um desenho 
-                        profissional e amador.</p>
-                </div>
-                <div><img src="/assets/images/mod01.png" alt=""></div>
-            </div>
-            <img class="balls-component" src="/assets/icons/icons-svg/balls-component.svg" alt=""/>
-        </section>
+            </section>
 
-    <!-- -------------------------------MENTOR------------------------- -->
-
-        <section id="mentor">
-            <h1 class="mentor-title">MAYARA RODRIGUES</h1>
-            <div id="mentory">
-                <img src="/assets/images/mentor.png" alt=""/>
-                <div>
-                    <!-- fazer forma aqui -->
-                    <p class="texts">     Mayara descobriu que sua missão é ajudar as pessoas a 
-                        realizar o sonho de aprender a desenhar, mesmo sem terem 
-                        nascido com o "dom de desenhar". Após anos de experiência 
-                        e percebendo que os métodos tradicionais de ensino não 
-                        funcionavam para muitos, ela desenvolveu o Método Fan Art 3.0. 
-                        Com mais de 100 mil alunos no Brasil e no mundo e um milhão 
-                        de inscritos no YouTube, seu objetivo é ajudar mais de 200 mil 
-                        pessoas a aprender a desenhar até 2025.</p>
-                    <img src="/assets/images/desenho1.png" alt=""/>
+            <section id="mentor">
+                <h2>MENTORA</h2>
+                <div id="container-mentor">
+                    <div id="container-info">
+                        <img src="/assets/images/image-mentor-desktop.png" alt="Imagem de mentora do curso" />
+                        <p>
+                        Mayara descobriu que sua missão é ajudar as pessoas a realizar o
+                        sonho de aprender a desenhar, mesmo sem terem nascido com o "dom
+                        de desenhar". Após anos de experiência e percebendo que os métodos
+                        tradicionais de ensino não funcionavam para muitos, ela
+                        desenvolveu o Método Fan Art 3.0.
+                        </p>
+                    </div>
+                    <div id="container-galeria">
+                        <img class="galeria" src="/assets/images/boruto-naruto-desktop.png" alt="Imagem de desenho do boruto e naruto"/>
+                        <img class="galeria" src="/assets/images/boruto-desktop.png" alt="Imagem de desenho do boruto"/>
+                        <img class="galeria" src="/assets/images/sakura-desktop.png" alt="Imagem de desenho da sakura"/>
+                        <img class="galeria" src="/assets/images/deku-desktop.png" alt="Imagem de desenho do deku" />
+                        <img class="galeria" src="/assets/images/tobirama-desktop.png" alt="Imagem de desenho do tobirama"/>
+                        <img class="galeria" src="/assets/images/kurama-naruto-desktop.png" alt="Imagem de desenho da kurama e naruto"/>
+                    </div>
                 </div>
-            </div>
+                <footer><a href="https://pay.hotmart.com/Q7370736D?checkoutMode=10&_hi=eyJjaWQiOiIxNjc4MTg2OTI0NjA4MTk2NTYyMTI2ODQzNDE0NTYwIiwiYmlkIjoiMTY3ODE4NjkyNDYwODE5NjU2MjEyNjg0MzQxNDU2MCIsInNpZCI6IjliMDRkMzQxZWI4YTRlZWJiODA1MzE2NzdlNzJmZTMxIn0=.1682550511953" target="_blank" class="begin-btn">QUERO APRENDER!</a></footer>
+            </section>
+        </main>
 
-            <h1 class="mentor-title">GALERIA</h1>
-            <div id="mentor-gallery">
-                <img src="/assets/icons/icons-svg/left.svg" alt=""/>
-                <img src="/assets/images/narutoclass-shippuden.png" alt=""/>
-                <img src="/assets/images/boruto.png" alt=""/>
-                <img src="/assets/images/sakura.png" alt=""/>
-                <img src="/assets/icons/icons-svg/right.svg" alt=""/>
-            </div>
-        </section>
-
-
-    <!-- -------------------------------DEPOIMENTOS/FAQ------------------------- -->
-        <section id="depoimentos"></section>
-    </main>
-  </body>
+        <script type="text/javascript" src="/script.js"></script>
+    </body>
 </html>
