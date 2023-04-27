@@ -140,35 +140,7 @@ section {
   right: 0;
   bottom: -0.6rem;
   max-width: 100%;
-}
-
-.ball {
-  border-radius: 50%;
-  position: absolute;
-}
-
-.ball.ball-1 {
-  background: var(--bg-color-primary);
-  height: 60rem;
-  width: 60rem;
-  top: 7rem;
-  right: 24rem;
-}
-
-.ball.ball-2 {
-  background: var(--bg-color-primary);
-  height: 20rem;
-  width: 20rem;
-  top: 30rem;
-  right: -10rem;
-}
-
-.ball.ball-3 {
-  background: var(--bg-color-primary);
-  height: 20rem;
-  width: 20rem;
-  top: 4rem;
-  right: 4rem;
+  max-height: 80%;
 }
 
 header.sticky {
@@ -254,7 +226,6 @@ h4 {
 .container-card-img img {
   border-radius: 1.2rem 1.2rem 0 0;
   max-width: 100%;
-  /* height: 12rem; */
 }
 
 .container-card-number {
@@ -299,7 +270,6 @@ h4 {
 #container-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: repeat(auto-fit, minmax(25rem, auto)); */
 }
 
 .galeria {
@@ -319,7 +289,7 @@ footer {
 }
 
 footer .begin-btn {
-  width: 80%;
+  max-width: 80%;
 }
 
 /* MEDIAS QUERIES */
@@ -339,32 +309,9 @@ footer .begin-btn {
     overflow: auto;
     align-self: center;
     max-width: 100%;
+    max-height: 80%;
     position: relative;
     bottom: -11rem;
-  }
-
-  .ball.ball-1 {
-    background: var(--bg-color-primary);
-    height: 90%;
-    width: 90%;
-    top: 20%;
-    right: 10%;
-  }
-
-  .ball.ball-2 {
-    background: var(--bg-color-primary);
-    height: 25%;
-    width: 25%;
-    top: 60%;
-    right: -25%;
-  }
-
-  .ball.ball-3 {
-    background: var(--bg-color-primary);
-    height: 25%;
-    width: 25%;
-    top: 2%;
-    right: 0%;
   }
 
   header {
