@@ -98,12 +98,16 @@ section {
   overflow: hidden;
 }
 
+.begin-text {
+  width: 80%;
+}
+
 .begin-text h1 {
   font-family: "RocknRoll One", sans-serif;
   font-size: 13rem;
   line-height: 14rem;
   color: var(--bg-color-primary);
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .begin-text p {
@@ -140,7 +144,7 @@ section {
   right: 0;
   bottom: -0.6rem;
   max-width: 100%;
-  max-height: 80%;
+  max-height: 100%;
 }
 
 header.sticky {
@@ -309,7 +313,7 @@ footer .begin-btn {
     overflow: auto;
     align-self: center;
     max-width: 100%;
-    max-height: 80%;
+    max-height: 100%;
     position: relative;
     bottom: -11rem;
   }
