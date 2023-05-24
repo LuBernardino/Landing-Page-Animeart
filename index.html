@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt-pt" mode="dark">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,6 +30,14 @@
                     <li><a href="#benefits">Benefícios</a></li>
                     <li><a href="#modules">Módulos</a></li>
                     <li><a href="#mentor">Mentora</a></li>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="changeTheme" />
+                        <label class="toggle" for="changeTheme">
+                            <ion-icon class="icon icon--light" name="sunny-outline"></ion-icon>
+                            <ion-icon class="icon icon--dark" name="moon-outline"></ion-icon>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -237,6 +245,8 @@
             </section>
         </main>
 
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>
