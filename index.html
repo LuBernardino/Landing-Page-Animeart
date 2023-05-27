@@ -26,10 +26,10 @@
             <div class="bx bx-menu" id="menu-icon"></div>
             <nav>
                 <ul class="navbar">
-                    <li><a href="#begin">Início</a></li>
-                    <li><a href="#benefits">Benefícios</a></li>
-                    <li><a href="#modules">Módulos</a></li>
-                    <li><a href="#mentor">Mentora</a></li>
+                    <li><a href="#begin" data-translate="navbar-link-one">Início</a></li>
+                    <li><a href="#benefits" data-translate="navbar-link-two">Benefícios</a></li>
+                    <li><a href="#modules" data-translate="navbar-link-three">Módulos</a></li>
+                    <li><a href="#mentor" data-translate="navbar-link-four">Mentora</a></li>
                     <div>
                         <input class="checkbox" type="checkbox" id="changeTheme" />
                         <label class="toggle" for="changeTheme">
@@ -38,6 +38,20 @@
                             <span class="ball"></span>
                         </label>
                     </div>
+                    <div class="translate">
+                        <img class="flag" src="./assets/images/bandeira-do-brasil.png" alt="">
+                        <!-- <img class="flag" src="./assets/images/bandeira-de-portugal.png" alt="">
+                        <img class="flag" src="./assets/images/bandeira-do-eua.png" alt="">
+                        <img class="flag" src="./assets/images/bandeira-da-espanha.png" alt="">
+                        <img class="flag" src="./assets/images/bandeira-do-japao.png" alt=""> -->
+                        <div class="menu-languages">
+                            <p class="language" data-value="pt-br">Português(Brasil)</p>
+                            <p class="language" data-value="pt-pt">Português(Europeu)</p>
+                            <p class="language" data-value="en-us">Inglês</p>
+                            <p class="language" data-value="es-es">Espanhol</p>
+                            <p class="language" data-value="ja-ja">Japonês</p>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -45,68 +59,69 @@
         <main>
             <section id="begin" class="begin">
                 <div class="begin-text animate__animated animate__fadeInLeft">
-                    <h1>ANIME <br>ART</h1>
-                    <p>
+                    <h1 data-translate="begin-title">ANIME <br>ART</h1>
+                    <p data-translate="begin-description">
                         Descubra, finalmente, o método exato para aprender a desenhar seus
                         personagens de animes favoritos, mesmo se você não nasceu com o dom
                         de desenhar. Com o sistema completo do Método Fan Art 3.0.
                     </p>
-                    <a href="https://pay.hotmart.com/Q7370736D?checkoutMode=10&_hi=eyJjaWQiOiIxNjc4MTg2OTI0NjA4MTk2NTYyMTI2ODQzNDE0NTYwIiwiYmlkIjoiMTY3ODE4NjkyNDYwODE5NjU2MjEyNjg0MzQxNDU2MCIsInNpZCI6IjliMDRkMzQxZWI4YTRlZWJiODA1MzE2NzdlNzJmZTMxIn0=.1682550511953" target="_blank" class="begin-btn">QUERO APRENDER!</a>
+                    <a href="https://pay.hotmart.com/Q7370736D?checkoutMode=10&_hi=eyJjaWQiOiIxNjc4MTg2OTI0NjA4MTk2NTYyMTI2ODQzNDE0NTYwIiwiYmlkIjoiMTY3ODE4NjkyNDYwODE5NjU2MjEyNjg0MzQxNDU2MCIsInNpZCI6IjliMDRkMzQxZWI4YTRlZWJiODA1MzE2NzdlNzJmZTMxIn0=.1682550511953" target="_blank" class="begin-btn" data-translate="begin-button">QUERO APRENDER!</a>
                 </div>
                 <div class="begin-img">
                     <img src="./assets/images/draw-jujutsu-red.png" class="animate__animated animate__zoomIn" alt="imagem de desenho de anime"/>
                 </div>
+                <img class="chat-balloon" src="./assets/icons/icons-svg/message-balloon.svg" alt="">
             </section>
             
 
             <section id="benefits">
-                <h2>BENEFÍCIOS</h2>
+                <h2 data-translate="benefits-title">BENEFÍCIOS</h2>
                 <div class="row-items ">
                     <div class="container-box">
                         <div class="container-img"><img src="./assets/icons/icons-svg/computer.svg" alt="Icone de computador" /></div>
-                        <h3>CURSO 100% ONLINE</h3>
-                        <p>Assista de qualquer <br />dispositivo.</p>
+                        <h3 data-translate="benefits-title-card-one">CURSO 100% ONLINE</h3>
+                        <p data-translate="benefits-description-card-one">Assista de qualquer <br/>dispositivo.</p>
                     </div>
                     <div class="container-box">
-                        <div class="container-img"><img src="./assets/icons/icons-svg/video.svg" alt="Icone de video" /></div>
-                        <h3>+35 VIDEO AULAS</h3>
-                        <p>Aulas didáticas, com <br />exercícios práticos.</p>
+                        <div class="container-img"><img src="./assets/icons/icons-svg/video.svg" alt="Icone de video"/></div>
+                        <h3 data-translate="benefits-title-card-two">+35 VIDEO AULAS</h3>
+                        <p data-translate="benefits-description-card-two">Aulas didáticas, com <br/>exercícios práticos.</p>
                     </div>
                     <div class="container-box">
                         <div class="container-img"><img src="./assets/icons/icons-svg/computer-check.svg" alt="Icone de computador com check" /></div>
-                        <h3>ACESSO VITALÍCIO</h3>
-                        <p>Acessar o curso <br />para sempre.</p>
+                        <h3 data-translate="benefits-title-card-three">ACESSO VITALÍCIO</h3>
+                        <p data-translate="benefits-description-card-three">Acessar o curso <br/>para sempre.</p>
                     </div>
                 </div>
                 <div class="row-items">
                     <div class="container-box">
                         <div class="container-img"><img src="./assets/icons/icons-svg/clock.svg" alt="Icone de relógio" /></div>
-                        <h3>LIBERADO 24H/DIA</h3>
-                        <p>Assista quando quiser, <br />a qualquer hora.</p>
+                        <h3 data-translate="benefits-title-card-four">LIBERADO 24H/DIA</h3>
+                        <p data-translate="benefits-description-card-four">Assista quando quiser, <br/>a qualquer hora.</p>
                     </div>
                     <div class="container-box">
                         <div class="container-img"><img src="./assets/icons/icons-svg/certificate.svg" alt="Icone de certificado" /></div>
-                        <h3>CERTIFICADO 3.0</h3>
-                        <p>Certificado de conclusão <br />de curso.</p>
+                        <h3 data-translate="benefits-title-card-five">CERTIFICADO 3.0</h3>
+                        <p data-translate="benefits-description-card-five">Certificado de conclusão <br/>de curso.</p>
                     </div>
                     <div class="container-box">
                         <div class="container-img"><img src="./assets/icons/icons-svg/comunity.svg" alt="Icone de comunidade" /></div>
-                        <h3>COMUNIDADE</h3>
-                        <p>Apoio de milhares <br />de alunos.</p>
+                        <h3 data-translate="benefits-title-card-six">COMUNIDADE</h3>
+                        <p data-translate="benefits-description-card-six">Apoio de milhares <br/>de alunos.</p>
                     </div>
                 </div>
             </section>
 
             <section id="modules">
-                <h2>MÓDULOS</h2>
+                <h2 data-translate="modules-title">MÓDULOS</h2>
                 <div class="container-modules-row">
                     <div class="container-card">
                         <div class="container-card-img">
                             <img src="./assets/images/mod01.png" alt="Imagem do módulo 01" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-one.svg" alt="Icone do numero 01"/>
                         </div>
-                        <h4>ANÁLISE DE IMAGENS</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-one">ANÁLISE DE IMAGENS</h4>
+                        <p data-translate="modules-description-card-one">
                         Fundamental para qualquer pessoa que tenha interesse em se
                         aprofundar no mundo da arte, design gráfico, animação ou outras
                         áreas que envolvem o uso de imagens.
@@ -117,8 +132,8 @@
                             <img src="./assets/images/mod02.png" alt="Imagem do módulo 02" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-two.svg" alt="Icone do numero 02"/>
                         </div>
-                        <h4>TÉCNICAS DE ESBOÇO</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-two">TÉCNICAS DE ESBOÇO</h4>
+                        <p data-translate="modules-description-card-two">
                         Essencial para aprender técnicas de esboço utilizadas pelos
                         verdadeiros desenhistas de mangá e receberá um guia passo a passo
                         para desenvolver o esboço do desenho de forma mais assertiva e bem
@@ -130,8 +145,8 @@
                             <img src="./assets/images/mod03.png" alt="Imagem do módulo 03" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-three.svg" alt="Icone do numero 03"/>
                         </div>
-                        <h4>ANATOMIA DE ROSTO</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-three">ANATOMIA DE ROSTO</h4>
+                        <p data-translate="modules-description-card-three">
                         Análise de imagens é voltado para o estudo da anatomia, aprenderá
                         técnicas e estratégias para desenhar personagens em diferentes
                         posições e ângulos, mantendo a proporção e simetria do desenho.
@@ -145,8 +160,8 @@
                             <img src="./assets/images/mod04.png" alt="Imagem do módulo 04" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-four.svg" alt="Icone do numero 04"/>
                         </div>
-                        <h4>ANATOMIA DE CORPO</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-four">ANATOMIA DE CORPO</h4>
+                        <p data-translate="modules-description-card-four">
                         Análise de imagens é dedicado ao estudo da anatomia do corpo
                         humano e movimentos mais realistas e dinâmicos. Aprenderá a
                         desenhar em diferentes tamanhos.
@@ -157,8 +172,8 @@
                             <img src="./assets/images/mod05.png" alt="Imagem do módulo 05" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-five.svg" alt="Icone do numero 05"/>
                         </div>
-                        <h4>ANÁLISE DE CABELOS</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-five">ANÁLISE DE CABELOS</h4>
+                        <p data-translate="modules-description-card-five">
                         Eles possuem um estilo único e muitas vezes parecem desafiar as
                         leis da gravidade, o que pode dificultar o processo de desenho.
                         Aprenderá a técnica de desenho de cabelos em anime/mangá.
@@ -169,8 +184,8 @@
                             <img src="./assets/images/mod06.png" alt="Imagem do módulo 06" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-six.svg"alt="Icone do numero 06"/>
                         </div>
-                        <h4>MÃOS E PÉS PERFEITOS</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-six">MÃOS E PÉS PERFEITOS</h4>
+                        <p data-translate="modules-description-card-six">
                         Aprenderá técnicas e estratégias para desenhar mãos e pés em
                         personagens de anime/mangá de forma precisa e realista, levando em
                         conta a anatomia e os detalhes únicos de cada estilo.
@@ -184,8 +199,8 @@
                             <img src="./assets/images/mod07.png" alt="Imagem do módulo 07" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-seven.svg" alt="Icone do numero 07"/>
                         </div>
-                        <h4>DESENHANDO ROUPAS</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-seven">DESENHANDO ROUPAS</h4>
+                        <p data-translate="modules-description-card-seven">
                         Aprenderá técnicas de desenhar roupas, e analisar as semelhanças
                         de roupas de manga curta/longa, calças, camisetas, e acessórios
                         com exatidão.
@@ -196,8 +211,8 @@
                             <img src="./assets/images/mod08.png" alt="Imagem do módulo 08" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-eight.svg"alt="Icone do numero 08"/>
                         </div>
-                        <h4>FINALIZAÇÃO</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-eight">FINALIZAÇÃO</h4>
+                        <p data-translate="modules-description-card-eight">
                         Aprenderá como segurar corretamente a caneta para obter o melhor
                         resultado, qual tipo de caneta ideal para o seu desenho, e como
                         utilizar diferentes espessuras de caneta para criar contrastes e
@@ -209,8 +224,8 @@
                             <img src="./assets/images/mod09.png" alt="Imagem do módulo 09" />
                             <img class="container-card-number" src="./assets/icons/icons-svg/number-nine.svg" alt="Icone do numero 09"/>
                         </div>
-                        <h4>PINTURA LUZ E SOMBRA</h4>
-                        <p>
+                        <h4 data-translate="modules-title-card-nine">PINTURA LUZ E SOMBRA</h4>
+                        <p data-translate="modules-description-card-nine">
                         Será introduzido ao mundo da pintura, aprimorando ainda mais o seu
                         desenho. Aprenderá as técnicas de luz e sombra para dar mais
                         profundidade e realismo às suas criações.
@@ -220,11 +235,11 @@
             </section>
 
             <section id="mentor">
-                <h2>MENTORA</h2>
+                <h2 data-translate="mentor-title">MENTORA</h2>
                 <div id="container-mentor">
                     <div id="container-info">
                         <img src="./assets/images/image-mentor-desktop.png" alt="Imagem de mentora do curso" />
-                        <p>
+                        <p data-translate="mentor-description">
                         Mayara descobriu que sua missão é ajudar as pessoas a realizar o
                         sonho de aprender a desenhar, mesmo sem terem nascido com o "dom
                         de desenhar". Após anos de experiência e percebendo que os métodos
@@ -241,7 +256,7 @@
                         <img class="galeria" src="./assets/images/kurama-naruto-desktop.png" alt="Imagem de desenho da kurama e naruto"/>
                     </div>
                 </div>
-                <footer><a href="https://pay.hotmart.com/Q7370736D?checkoutMode=10&_hi=eyJjaWQiOiIxNjc4MTg2OTI0NjA4MTk2NTYyMTI2ODQzNDE0NTYwIiwiYmlkIjoiMTY3ODE4NjkyNDYwODE5NjU2MjEyNjg0MzQxNDU2MCIsInNpZCI6IjliMDRkMzQxZWI4YTRlZWJiODA1MzE2NzdlNzJmZTMxIn0=.1682550511953" target="_blank" class="begin-btn">QUERO APRENDER!</a></footer>
+                <footer><a href="https://pay.hotmart.com/Q7370736D?checkoutMode=10&_hi=eyJjaWQiOiIxNjc4MTg2OTI0NjA4MTk2NTYyMTI2ODQzNDE0NTYwIiwiYmlkIjoiMTY3ODE4NjkyNDYwODE5NjU2MjEyNjg0MzQxNDU2MCIsInNpZCI6IjliMDRkMzQxZWI4YTRlZWJiODA1MzE2NzdlNzJmZTMxIn0=.1682550511953" target="_blank" class="begin-btn" data-translate="mentor-button">QUERO APRENDER!</a></footer>
             </section>
         </main>
 
