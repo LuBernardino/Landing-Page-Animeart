@@ -12,8 +12,8 @@
 
 This project was developed with the following technologies:
 
-- HTML e CSS.
-- Git e Github.
+- HTML, CSS and Javascript.
+- Git and Github.
 - Figma.
  <br>
  
