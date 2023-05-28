@@ -1,3 +1,4 @@
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
@@ -44,48 +45,54 @@ flag.addEventListener("click", (e) => {
   menuNavegation.classList.toggle("active");
 });
 
-// trocar bandeira
-const languages = document.querySelectorAll(".language");
+//função para remover menuNavegation depois de escolher uma opção de idioma.
+function removeMenuNavegation() {
+  menuNavegation.classList.remove("active");
+};
 
+// arrow function para trocar bandeira
+const languages = document.querySelectorAll(".language");
 languages.forEach((language) => {
   language.addEventListener("click", (e) => {
     const languageSelected = e.target.getAttributeNode("data-value").value;
+    const languageName = e.target.innerHTML;
 
     switch (languageSelected) {
       case "pt-br":
         flag.setAttribute("src", "./assets/images/bandeira-do-brasil.png");
-        changeLanguage("pt-br");
-        // menuNavegation.remove();
+        changeLanguage(languageSelected, languageName);
+        removeMenuNavegation();
         break;
       case "pt-pt":
         flag.setAttribute("src", "./assets/images/bandeira-de-portugal.png");
-        changeLanguage("pt-pt");
-        // menuNavegation.remove();
-        // menuNavegation.style.display = 'none';
+        changeLanguage(languageSelected, languageName);
+        removeMenuNavegation();
         break;
       case "en-us":
         flag.setAttribute("src", "./assets/images/bandeira-do-eua.png");
-        changeLanguage("en-us");
-        // menuNavegation.remove();
+        changeLanguage(languageSelected, languageName);
+        removeMenuNavegation();
         break;
       case "es-es":
         flag.setAttribute("src", "./assets/images/bandeira-da-espanha.png");
-        changeLanguage("es-es");
-        // menuNavegation.remove();
+        changeLanguage(languageSelected, languageName);
+        removeMenuNavegation();
         break;
       case "ja-ja":
         flag.setAttribute("src", "./assets/images/bandeira-do-japao.png");
-        changeLanguage("ja-ja");
-        // menuNavegation.remove();
+        changeLanguage(languageSelected, languageName);
+        removeMenuNavegation();
         break;
     }
   });
 });
 
-// trocando o idioma
-
-function changeLanguage(language) {
+// função para trocar o idioma
+function changeLanguage(language, languageName) {
   const translateElements = document.querySelectorAll("[data-translate]");
+
+  //seta o idioma no contexto do anibot
+  contextLanguage.content = `Responda em ${languageName}`;
 
   translateElements.forEach((item) => {
     const identifier = item.getAttribute("data-translate");
@@ -102,7 +109,7 @@ const translations = {
     "navbar-link-three": `Módulos`,
     "navbar-link-four": `Mentora`,
 
-    "begin-title": `ANIME ART`,
+    "begin-title": `ANIME </br>ART`,
     "begin-description": `Descubra, finalmente, o método exato para aprender a 
     desenhar seus personagens de animes favoritos, mesmo se você não nasceu com o 
     dom de desenhar. Com o sistema completo do Método Fan Art 3.0.`,
@@ -177,7 +184,7 @@ const translations = {
     "navbar-link-three": "Módulos",
     "navbar-link-four": "Mentora",
 
-    "begin-title": "ANIME ART",
+    "begin-title": "ANIME </br>ART",
     "begin-description": "Descubra, finalmente, o método exato para aprender a desenhar os seus personagens de anime favoritos, mesmo que não tenha nascido com o talento para desenhar. Com o sistema completo do Método Fan Art 3.0.",
     "begin-button": "QUERO APRENDER!",
 
@@ -226,7 +233,7 @@ const translations = {
     "navbar-link-three": `Modules`,
     "navbar-link-four": `Mentor`,
     
-    "begin-title": `ANIME ART`,
+    "begin-title": `ANIME </br>ART`,
     "begin-description": `Discover, finally, the exact method to learn how to draw your favorite anime characters, even if you weren't born with the talent for drawing. With the complete system of the Fan Art Method 3.0.`,
     "begin-button": `I WANT TO LEARN!`,
 
@@ -275,7 +282,7 @@ const translations = {
     "navbar-link-three": "Módulos",
     "navbar-link-four": "Mentora",
 
-    "begin-title": "ANIME ART",
+    "begin-title": "ANIME </br>ART",
     "begin-description": "Descubre, finalmente, el método exacto para aprender a dibujar tus personajes de anime favoritos, incluso si no naciste con el talento para el dibujo. Con el sistema completo del Método Fan Art 3.0.",
     "begin-button": "¡QUIERO APRENDER!",
 
@@ -367,3 +374,67 @@ const translations = {
     "mentor-button": "学びたい！",
   },
 };
+
+
+//CHAT ANIBOT
+const chatButton = document.querySelector(".chat-balloon");
+const chatBot = document.querySelector("#chat-bot-container");
+const chatButtonClose = document.querySelector(".icon-close");
+
+chatButton.addEventListener("click", (e) => {
+  chatBot.classList.toggle("active");
+});
+
+chatButtonClose.addEventListener("click", (e) => {
+    chatBot.classList.remove("active");
+  });
+
+//ENVIO DE MENSAGENS
+
+const sendMessageButton = document.querySelector(".send-message-button");
+const userMessage = document.querySelector(".user-message-box");
+const messageContent = document.querySelector(".chat-bot-message-content");
+
+sendMessageButton.addEventListener("click", async (e) => {
+  const message = userMessage.value.trim();
+
+  if (message != "") {
+    createMessage(message, "user");
+    userMessage.value = "";
+
+    //realizando o request para a api do openai e colocando o loading
+    createMessage("", "bot", true);
+    const response = await getResponseAnibot(message);
+    removeLoadingMessage();
+    createMessage(response, "bot");
+  } else {
+    console.log("erro"); /*colocar mensagem de erro aqui se estiver vazio*/
+  }
+
+});
+
+function createMessage(message, type, loading = false) {
+    let messageElement = document.createElement("div");
+    const typeClass = type === "user" ? "message-usuario" : "message-bot";
+    const img = type === "user" ? "ninja-1.png" : "chatbot-2.png";
+    const messageValue = !loading ? `<p>${message}</p>` : '<div class="dot-flashing"></div>';  
+
+    messageElement.classList.add(typeClass);
+
+    if(loading) {
+        messageElement.classList.add("loading");
+    }
+ 
+    messageElement.innerHTML = `<img src="./assets/icons/icons-png/${img}" alt="">
+      ${messageValue}`;
+
+    messageContent.append(messageElement);
+}
+
+function removeLoadingMessage() {
+    const loadingMessage = document.querySelector(".chat-bot-message-content .message-bot.loading");
+    if(loadingMessage)
+    {
+        loadingMessage.remove();
+    }
+}

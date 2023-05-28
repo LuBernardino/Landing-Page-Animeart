@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=RocknRoll+One&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./loading.css"/>
     </head>
 
     <body>
@@ -40,16 +41,12 @@
                     </div>
                     <div class="translate">
                         <img class="flag" src="./assets/images/bandeira-do-brasil.png" alt="">
-                        <!-- <img class="flag" src="./assets/images/bandeira-de-portugal.png" alt="">
-                        <img class="flag" src="./assets/images/bandeira-do-eua.png" alt="">
-                        <img class="flag" src="./assets/images/bandeira-da-espanha.png" alt="">
-                        <img class="flag" src="./assets/images/bandeira-do-japao.png" alt=""> -->
                         <div class="menu-languages">
-                            <p class="language" data-value="pt-br">Português(Brasil)</p>
-                            <p class="language" data-value="pt-pt">Português(Europeu)</p>
-                            <p class="language" data-value="en-us">Inglês</p>
-                            <p class="language" data-value="es-es">Espanhol</p>
-                            <p class="language" data-value="ja-ja">Japonês</p>
+                            <p class="language" data-value="pt-br">Português (BR)</p>
+                            <p class="language" data-value="pt-pt">Português (EU)</p>
+                            <p class="language" data-value="en-us">Inglês (EN)</p>
+                            <p class="language" data-value="es-es">Espanhol (ES)</p>
+                            <p class="language" data-value="ja-ja">Japonês (JA)</p>
                         </div>
                     </div>
                 </ul>
@@ -71,6 +68,35 @@
                     <img src="./assets/images/draw-jujutsu-red.png" class="animate__animated animate__zoomIn" alt="imagem de desenho de anime"/>
                 </div>
                 <img class="chat-balloon" src="./assets/icons/icons-svg/message-balloon.svg" alt="">
+                <!-- ANIBOT -->
+                <div id="chat-bot-container">
+                    <div class="chat-bot">
+                        <div class="chat-bot-header">
+                            <div>
+                                <img src="./assets/icons/icons-png/login-robot.png" alt="">
+                                <h1>AniBot <span>esta online 🟢</span></h1>
+                            </div>
+                            <div></div>
+                            <img class="icon-close" src="./assets/icons/icons-svg/close.svg" alt="">
+                        </div>
+            
+                        <!-- MENSAGENS -->
+                        <div class="chat-bot-message">
+                            <div class="chat-bot-message-content">
+                                <div class="message-bot">
+                                    <img src="./assets/icons/icons-png/chatbot-2.png" alt="">
+                                    <p>Olá, eu sou o AniBot! como posso te ajudar?</p>
+                                </div>
+                                <div class="textarea-message">
+                                    <textarea class="user-message-box" maxlength="250" cols="30" rows="2"></textarea>
+                                    <button class="send-message-button">
+                                        <img src="./assets/icons/icons-svg/Sent.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
 
@@ -209,7 +235,7 @@
                     <div class="container-card">
                         <div class="container-card-img">
                             <img src="./assets/images/mod08.png" alt="Imagem do módulo 08" />
-                            <img class="container-card-number" src="./assets/icons/icons-svg/number-eight.svg"alt="Icone do numero 08"/>
+                            <img class="container-card-number" src="./assets/icons/icons-svg/number-eight.svg" alt="Icone do numero 08"/>
                         </div>
                         <h4 data-translate="modules-title-card-eight">FINALIZAÇÃO</h4>
                         <p data-translate="modules-description-card-eight">
@@ -262,6 +288,8 @@
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="./variables.js"></script>
+        <script type="text/javascript" src="./anibot.js"></script>
         <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>

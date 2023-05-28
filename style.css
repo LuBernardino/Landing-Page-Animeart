@@ -183,7 +183,8 @@ header.sticky {
   box-shadow: 0 0 0 var(--bg-color-primary);
   border-radius: 50%;
   animation: pulsate 2s infinite;
-  /* border: 1px solid var(--bg-color-third); */
+  border: 1px solid var(--bg-color-third);
+  z-index: 99;
 }
 @keyframes pulsate {
   0% {
@@ -339,7 +340,7 @@ footer {
 }
 
 footer .begin-btn {
-  max-width: 80%;
+  max-width: 60%;
 }
 
 /* ----------------COMPONENTES */
@@ -429,32 +430,215 @@ html[mode="dark"] .ball {
   color: var(--text-color);
   background-color: var(--bg-color-second);
   position: absolute;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
   top: 90px;
   right: 10px;
 
   height: 0;
   opacity: 0;
   transition: 0.5s;
+  visibility: hidden;
 }
 
-.menu-languages p {
-  padding: 8px;
+.menu-languages .language {
+  padding: .8rem;
   /* border-bottom: 1px solid var(--text-color); */
-  cursor: pointer;
   font-size: 14px;
   transition: all 0.4s;
 }
 
-.menu-languages p:hover {
+.menu-languages .language:nth-child(5) {
+  border: none;
+}
+
+.menu-languages .language:hover {
   transform: scale(1.1);
   color: var(--bg-color-third);
 }
 
 .menu-languages.active {
-  height: 186px;
+  height: 195px;
   opacity: 1;
   transition: 0.5s;
+  visibility: visible;
 }
+
+/*-------------- CHATBOT*/
+
+#chat-bot-container {
+  position: fixed;
+  bottom: 11rem;
+  right: 2rem;
+  z-index: 99;
+  display: none;
+  opacity: 0;
+}
+
+#chat-bot-container.active {
+  display: block;
+  opacity: 1;
+}
+
+.chat-bot {
+  width: 30rem;
+  background-color: #E4E6E9;
+  border-radius: 2rem;
+  transition: .5s;
+  height: 40rem;
+  position: relative;
+}
+
+/* #chat-bot-container.active .chat-bot {
+  opacity: 1;
+  display: block;
+} */
+
+.chat-bot-header {
+  background-color: #033C59;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.chat-bot-header > div {
+  color: #E4E6E9;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.icon-close {
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* MENSAGENS */
+
+.chat-bot-message {
+  height: 25rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: #E4E6E9;
+}
+
+.chat-bot-message::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+.chat-bot-message::-webkit-scrollbar-track {
+  background-color: #E4E6E9;
+}
+
+.chat-bot-message::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border-radius: 2rem;
+  box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.message-bot,
+.message-usuario {
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  gap: 10px;
+}
+
+.message-bot img {
+  height: 4rem;
+}
+
+.message-bot > p ,
+.message-usuario > p {
+  font-size: 10px;
+  background-color: #D9D9D9;
+  color: #231F20;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 8px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.message-questions {
+  margin: 0 12px 0 60px;
+}
+
+.message-questions-prog {
+  border: 0.5px solid #231F20;
+  font-size: 10px;
+  padding: 4px;
+}
+
+.message-usuario {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2px
+}
+
+.textarea-message {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  position:absolute;
+  bottom:0;
+}
+
+.textarea-message textarea {
+  border-radius: 8px 0 0 8px;
+  padding: 10px;
+
+  background-color: #D9D9D9;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: none;
+  width: 100%;
+  height: 60px;
+  font-size: 10px;
+}
+
+.textarea-message textarea:focus {
+  outline: 0;
+}
+
+/* .user-message-box {
+  width: 100%;
+  font-size: 10px;
+} */
+
+.textarea-message button {
+  border-radius: 0 8px 8px 0;
+  border: none;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.textarea-message button img {
+  border-radius: 0 8px 8px 0;
+  background: #033C59;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+ 
+  cursor: pointer;
+  /* box-shadow: 0px 4px 4px 0px #00000040; */
+}
+
+.message-bot .dot-flashing {
+  margin-left: 2rem;
+}
+
+
+
+
+
 
 /*--------------------- MEDIAS QUERIES */
 
@@ -498,11 +682,13 @@ html[mode="dark"] .ball {
     right: 40px;
 
     height: 0;
+    visibility: hidden;
+    pointer-events: none;
     opacity: 0;
     transition: 0.5s;
   }
 
-  .menu-languages p {
+  .menu-languages .language {
     padding: 8px;
     /* border-bottom: 1px solid var(--text-color); */
     cursor: pointer;
@@ -511,8 +697,10 @@ html[mode="dark"] .ball {
 
   .menu-languages.active {
     height: 186px;
+    visibility: visible;
     opacity: 1;
     transition: 0.5s;
+    pointer-events: visible;
   }
 }
 
